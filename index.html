@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Basic Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="form-content">
+        <h1>Basic Form Page</h1>
+        <form action="" class="form">
+          <label for="name">Name</label>
+          <input
+            class="detail-form"
+            placeholder="Sachin"
+            type="text"
+            name="name"
+            id="name"
+          />
+          <label for="lastName">Last Name</label>
+          <input
+            class="detail-form"
+            placeholder="Rathore"
+            type="text"
+            name="lastName"
+            id="lastName"
+          />
+          <label for="email">Email</label>
+          <input
+            class="detail-form"
+            placeholder="Email"
+            type="email"
+            name="email"
+            id="email"
+          />
+          <label for="gender">Gender </label>
+          <select class="detail-form" name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+          <label for="age">Age</label>
+          <input class="detail-form" type="date" name="age" id="age" />
+          <label for="streetAddress">Street Address</label>
+          <input
+            class="detail-form"
+            placeholder="Near High Court, Jayendra Ganj, Gwalior"
+            type="text"
+            name="streetAddress"
+            id="streetAddress"
+          />
+          <label for="city">City</label>
+          <input
+            class="detail-form"
+            type="text"
+            placeholder="Gwalior"
+            name="city"
+            id="city"
+          />
+          <label for="state">State</label>
+          <input
+            class="detail-form"
+            type="text"
+            placeholder="Madhya Pradesh"
+            name="state"
+            id="state"
+          />
+          <label for="zipCode">Pin Code</label>
+          <input
+            class="detail-form"
+            type="text"
+            placeholder="474001"
+            name="zipCode"
+            id="zipCode"
+          />
+
+          <br />
+
+          <legend>
+            <p class="heading">By Email</p>
+            <input type="checkbox" name="comments" id="comments" />
+            <label for="comments">Comments</label>
+            <p class="desc">
+              Get notified when someones posts a comment on a posting.
+            </p>
+
+            <input type="checkbox" name="candidates" id="candidates" />
+            <label for="candidates">Candidates</label>
+            <p class="desc">
+              Get notified when someones posts a comment on a posting.
+            </p>
+
+            <input type="checkbox" name="offers" id="offers" />
+            <label for="offers">Offers</label>
+            <p class="desc">
+              Get notified when a candidate accepts or rejects an offer.
+            </p>
+          </legend>
+          <br />
+
+          <legend class="radio-section">
+            <p class="heading">Push Notifications</p>
+            <p class="desc">These are delivered via SMS to your Mobile Phone</p>
+
+            <div>
+              <input
+                type="radio"
+                id="everything"
+                name="pushNotification"
+                value="everything"
+              />
+              <label for="everything">Everything</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                id="sameAsEmail"
+                name="pushNotification"
+                value=""
+              />
+              <label for="sameAsEmail">Same as Email</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                id="noPushNothing"
+                name="pushNotification"
+                value=""
+              />
+              <label for="noPushNothing">No Push Nothing</label>
+            </div>
+          </legend>
+          <br />
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
